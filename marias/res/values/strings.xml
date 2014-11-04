@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Java Quiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello world!My name is Maria Soulele and this is my java quiz</string>
+    <string name="owner">by     Soulele Maria</string>
+    <string name="total">Your total is </string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="calculator">but for now it is just a calculator!</string>
+    <string name="add">Add one</string>
+    <string name="subtract">subtract one</string>
+    <string name="progress">Layout of activity in progress</string>
+
+    <string name="choices">Select Number of Choices</string>
+    <string name="correct">correct</string>
+    <string name="guesses">guesses</string>
+    <string name="incorrect">Wrong!</string>
+    <string name="question">Question</string>
+    <string name="difficulty">Select Level of Difficulty</string>
+    <string name="reset">Reset Quiz</string>
+    <string name="timer">Timer</string>
+    <string name="sound">Sound</string>
+    
+    <string-array name="questionsList">
+        <item >  question number 1 </item>
+        <item >  question number 2</item>
+        <item >  question number 3</item>
+        <item >  question number 4</item>
+        <item >  question number 5</item>
+    </string-array>
+    
+    <string-array name="answersList">
+        <item >  answer number 1 </item>
+        <item >  answer number 2</item>
+        <item >  answer number 3</item>
+        <item >  answer number 4</item>
+        <item >  answer number 5</item>
+        <item >  answer number 6</item>
+    </string-array>
+    
+    <string-array name="numberOfAnswerOptions">
+        <item > 10  </item>
+        <item > 15  </item>
+        <item > 20  </item>
+       
+        
+    </string-array>
+    
+</resources>

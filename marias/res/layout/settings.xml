@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choices"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp" >
+
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/difficulty"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/dif1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/dif2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+             android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/dif3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficult" 
+             android:textSize="15sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/timer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/correct_answer" >
+
+        </TextView>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/timerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer" />
+
+    <TextView
+        android:id="@+id/sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sound"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/correct_answer" />
+
+    <ToggleButton
+        android:id="@+id/buttonSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/sound_on" />
+
+</LinearLayout>
