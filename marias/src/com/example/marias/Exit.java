@@ -16,6 +16,5 @@ public class Exit extends Activity{
 	    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	    startActivity(intent);
 	}
-
+	//exit comment used to commit a change
 }
-//exit comment used to commit a change
