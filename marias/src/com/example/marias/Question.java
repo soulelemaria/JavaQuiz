@@ -1,6 +1,7 @@
 package com.example.marias;
 public class Question {
 	private int ID;
+	private int LEVEL;
 	private String QUESTION;
 	private String OPTA;
 	private String OPTB;
@@ -9,15 +10,16 @@ public class Question {
 	public Question()
 	{
 		ID=0;
+		LEVEL=1;
 		QUESTION="";
 		OPTA="";
 		OPTB="";
 		OPTC="";
 		ANSWER="";
 	}
-	public Question(String qUESTION, String oPTA, String oPTB, String oPTC,
+	public Question(int lEVEL,String qUESTION, String oPTA, String oPTB, String oPTC,
 			String aNSWER) {
-		
+		LEVEL=lEVEL;
 		QUESTION = qUESTION;
 		OPTA = oPTA;
 		OPTB = oPTB;
@@ -27,6 +29,10 @@ public class Question {
 	public int getID()
 	{
 		return ID;
+	}
+	public int getLEVEL()
+	{
+		return LEVEL;
 	}
 	public String getQUESTION() {
 		return QUESTION;
@@ -46,6 +52,10 @@ public class Question {
 	public void setID(int id)
 	{
 		ID=id;
+	}
+	public void setLEVEL(int level)
+	{
+		LEVEL=level;
 	}
 	public void setQUESTION(String qUESTION) {
 		QUESTION = qUESTION;
