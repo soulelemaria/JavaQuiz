@@ -28,19 +28,7 @@ public class Start extends Activity {
 
     
 	MediaPlayer journey;
-/*	private List<String> questionsList;
-	private List<String> answersList;
-	private Map<String,Boolean> regionsMap;
-	private String correctAnswer;
-	private int totalGuesses;
-	private int correctAnswers;
-	private int quessRows;
-	private Random random;
-	private Handler handler;
-	
-	private TextView questionTextView;
-	private TableLayout buttonTableLayout;
-	private TextView answerTextView;           */
+
 	
 	List<Question> quesList;
 	int score=0;
@@ -49,10 +37,10 @@ public class Start extends Activity {
 	TextView txtQuestion;
 	RadioButton rda, rdb, rdc;
 	Button butNext;
-	//
-	int availableQuestions; // Questions 0 till (askable - 1) can be asked
+	
+	int availableQuestions; 
 	Random random = new Random();
-	//
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,9 +54,9 @@ public class Start extends Activity {
 		
 		DbHelper db=new DbHelper(this);
 		quesList=db.getAllQuestions();
-	//	currentQ=quesList.get(qid);
+	
 		currentQ = pickQuestion();
-		//
+		
 		txtQuestion=(TextView)findViewById(R.id.textView1);
 		rda=(RadioButton)findViewById(R.id.radio0);
 		rdb=(RadioButton)findViewById(R.id.radio1);
@@ -103,7 +91,7 @@ public class Start extends Activity {
 		
 		
 	}  //τέλος onCreate
-//
+
 	private Question pickQuestion() {
 		Collections.shuffle(quesList);
 		int counter=1;
@@ -116,7 +104,7 @@ public class Start extends Activity {
 		
 		return currentQ;
 	}
-//
+
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_quiz, menu);
