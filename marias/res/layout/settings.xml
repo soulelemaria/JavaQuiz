@@ -97,6 +97,6 @@
         
         android:textOn="Sound ON"
         android:textOff="Sound OFF"
-        android:onClick="onToggleClicked"/>
+        />
 
 </LinearLayout>

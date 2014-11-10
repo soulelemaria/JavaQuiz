@@ -24,13 +24,13 @@ public class Settings extends Activity{
 		buttonSound=(ToggleButton)findViewById(R.id.buttonSound);
 		buttonSound.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-			       if (journey.isPlaying()) {
+			       if (buttonSound.isChecked()) {
 			       // The toggle is enabled
-			          
+			    	   buttonSound.setText("Sound ON");
 			          
 			       } else {
 			       // The toggle is disabled
-			         
+			    	   buttonSound.setText("Sound OFF");
 			          
 			       }
 			    }
