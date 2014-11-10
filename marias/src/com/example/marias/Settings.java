@@ -27,12 +27,17 @@ public class Settings extends Activity{
 			       if (buttonSound.isChecked()) {
 			       // The toggle is enabled
 			    	   buttonSound.setText("Sound ON");
-			          
+			          if(!journey.isPlaying())
+			        	  journey.start();
+			        
 			       } else {
 			       // The toggle is disabled
 			    	   buttonSound.setText("Sound OFF");
-			          
+			    	   if (journey.isPlaying())
+			          journey.stop();
+			    	   
 			       }
+			       
 			    }
 			});
 		

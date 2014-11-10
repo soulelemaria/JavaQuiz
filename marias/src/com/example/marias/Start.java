@@ -123,6 +123,56 @@ public class Start extends Activity {
 	}
 
 	
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		if(journey!=null)
+			journey.pause();
+			
+	} 
+
+	
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		journey.start();
+	}
+
+	
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		if(journey!=null)
+			journey.start();
+	}
+
+	
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		journey.start();
+	}
+
+	
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		journey.stop();
+	}
+
+
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if(journey!=null)
+			journey.release();
+	}
+
+	
+	
+	
+	
+	
 
 	
 } //end of Start Activity
