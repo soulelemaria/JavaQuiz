@@ -10,28 +10,31 @@ import android.widget.ToggleButton;
 
 public class Settings extends Activity{
 	
-	Button buttonSound,HomeButton,timerButton;
+	ToggleButton buttonSound,timerButton;
 	MediaPlayer journey;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings);
+		journey = MediaPlayer.create(Settings.this, R.raw.journey);
+		
+		
 		buttonSound=(ToggleButton)findViewById(R.id.buttonSound);
-	
-	ToggleButton b = (ToggleButton) findViewById(R.id.buttonSound);
-	
-	    }
-	public void onToggleClicked(View view) {
-	    // Is the toggle on?
-	    boolean on = ((ToggleButton) view).isChecked();
-	    
-	    if (on) {
-	        journey.start();
-	    } else {
-	        journey.release();
-	    }
+		buttonSound.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+			       if (journey.isPlaying()) {
+			       // The toggle is enabled
+			          
+			          
+			       } else {
+			       // The toggle is disabled
+			         
+			          
+			       }
+			    }
+			});
+		
 	}
-	    }   
-
+}
