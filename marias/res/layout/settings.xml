@@ -93,6 +93,10 @@
         android:id="@+id/buttonSound"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:button="@drawable/sound_on" />
+        android:button="@drawable/sound_on" 
+        
+        android:textOn="Sound ON"
+        android:textOff="Sound OFF"
+        android:onClick="onToggleClicked"/>
 
 </LinearLayout>
